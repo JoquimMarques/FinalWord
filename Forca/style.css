@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100dvh;
+    font-family: sans-serif;
+    background-color: rgb(98, 2, 145);
+    background-image:linear-gradient( rgb(70, 5, 132), rgba(255, 255, 255, 0.394), rgb(70, 5, 132));
+}
+
+main{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 200px;
+    max-width: 400px;
+
+}
+.adivi_works{
+    display: flex;
+    gap: 10px;
+    font-size: 39px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-weight: bold;
+    margin-top: -20px;
+    margin-bottom: -10px;
+    text-transform: uppercase;
+}
+.botons{
+    display: flex;
+    gap: 6px 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.clue{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+button {
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+   
+    border: none;
+    border-radius: 7px;
+}
+h1{
+    color: white;
+    margin-top: -90px;
+    font-size: 40px;
+}
+i{
+    color: rgb(163, 66, 253);
+}
+
+.botons button{
+    width: 30px;
+    background-color: rgb(55, 2, 93);
+    text-transform: uppercase;
+}
+.novo_jogo{
+    width: 110px;
+    background-color: rgb(99, 2, 189);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 20px;
+    animation: rodar 2s infinite alternate;
+
+}
+button:hover{
+    opacity: 0.8;
+}
+.dicas{
+    font-size: 18px;
+}
+@keyframes rodar {
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.2);
+    }
+
+}
+
+@media(max-width: 650px) {
+    body{
+        background-color: rgb(98, 2, 145);
+        height: 100dvh;
+    }
+    main{
+
+        flex-direction: column;
+        padding: 10px;
+    }
+    h1{
+        font: bold 30px;
+        color: white;
+        margin-top: 10px;
+     }
+    .botons button{
+        color: white;
+        background-color: rgb(185, 109, 255);
+        
+
+    }
+    .novo_jogo{
+        margin-bottom: 13px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        transition: 2s ;
+        animation: rodar 2s infinite alternate;
+
+
+    }
+    
+    
+    .content_img{
+        margin-bottom: -15px;
+    }
+
+    @keyframes rodar {
+        0%{
+            transform: scale(1);
+        }
+    
+        100%{
+            transform: scale(1.2);
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(37, 1, 58, 0.784);
+    color: white;
+    padding: 650px;
+    z-index: 1000;
+}
+#modal-button{
+    background-color: red;
+    padding: 20px 70px 60px;
+    border-radius: 16px;
+    border: 2px solid white;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    animation: rodar 1s infinite alternate;
+}
+.modal-content {
+    text-align: center;
+    
+}
